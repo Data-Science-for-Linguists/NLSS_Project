@@ -1,4 +1,5 @@
-10/1
+# 10/1
+
 I have created a text file of show dockets which I have found on a fan website. I cleaned up the file to make it easier to work with and removed irrelevant information.
 
 I found a website containing Twitch Stream statistics going back 365 days. I contacted the owner of the website to obtain a csv file for the streamer Northernlion going back further than 365 days.
