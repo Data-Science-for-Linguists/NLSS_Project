@@ -18,5 +18,5 @@ It seems the hardest part so far of aggrigating data lies in learning the Twitch
 
 In retrying the Twitch comment downloading script I'm running into connection errors. I had it working before, so I will need to troubleshoot and learn whether the problem is on Twitch's side or mine.
 
-## 10/8
+# 10/8
 Twitch changed their API and broke the Twitch comment downloader. I need to find a way to make it compatable with the new API or find a new app to use. ㅠ-ㅠ
