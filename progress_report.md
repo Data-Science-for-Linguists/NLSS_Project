@@ -20,3 +20,10 @@ In retrying the Twitch comment downloading script I'm running into connection er
 
 # 10/8
 Twitch changed their API and broke the Twitch comment downloader. I need to find a way to make it compatable with the new API or find a new app to use. ㅠ-ㅠ
+
+#10/12
+Pardon the language
+https://clips.twitch.tv/MushySecretiveHeronTheTarFu
+
+#10/27
+I've been experimenting with various new chat downloaders. Twitch-Chat-Downloader is updated somewhat regularly, but sometimes has trouble encoding characters, causing it to crash before finishing the full download. I've found one that seems promising called rechat-dl. It downloads the comments as a JSON. I'm trying to learn how to parse it so that I could retrieve just the comments from the file.
