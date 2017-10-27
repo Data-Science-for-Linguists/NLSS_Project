@@ -21,9 +21,11 @@ In retrying the Twitch comment downloading script I'm running into connection er
 # 10/8
 Twitch changed their API and broke the Twitch comment downloader. I need to find a way to make it compatable with the new API or find a new app to use. ㅠ-ㅠ
 
-#10/12
+# 10/12
 Pardon the language
 https://clips.twitch.tv/MushySecretiveHeronTheTarFu
 
-#10/27
-I've been experimenting with various new chat downloaders. Twitch-Chat-Downloader is updated somewhat regularly, but sometimes has trouble encoding characters, causing it to crash before finishing the full download. I've found one that seems promising called rechat-dl. It downloads the comments as a JSON. I'm trying to learn how to parse it so that I could retrieve just the comments from the file.
+# 10/27
+I've been experimenting with various new chat downloaders. Twitch-Chat-Downloader is updated somewhat regularly, but sometimes has trouble encoding characters, causing it to crash before finishing the full download. I've found one that seems promising called rechat-dl. It downloads the comments as a JSON. I'm trying to learn how to parse it so that I could retrieve just the comments from the file. I'm using a JSON Viewer to learn the format. I have been working on chat downloads from a folder that doesn't get pushed, but I will begin to push updates on a script to downloads chats.
+
+I have finished a short script for downloading the JSON of comments and extracting a given comment from it. A copy of this called Download_Script has been added into a new folder called Pipeline. The Pipeline folder will show the basic steps of how file IDs are retrieved, fed into the comment downloader, and affixed to the full dataframe.
