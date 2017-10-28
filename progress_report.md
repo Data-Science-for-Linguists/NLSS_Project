@@ -32,3 +32,5 @@ I have finished a short script for downloading the JSON of comments and extracti
 
 # 10/28
 I haven't been able to find an elegant solution for how to get the VOD IDs. Instead, what I've started doing is opening all the links to the VODs, getting their ID from the URL and putting it in a text file. I can use this text file as the input for my VOD comment downloader.
+
+I realized that some VODs are split into two parts. This means the comments will be over two files. I'm going to see if I can extract the date from the JSON files to group files together if they are from the same date/stream.
