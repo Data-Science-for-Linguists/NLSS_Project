@@ -29,3 +29,6 @@ https://clips.twitch.tv/MushySecretiveHeronTheTarFu
 I've been experimenting with various new chat downloaders. Twitch-Chat-Downloader is updated somewhat regularly, but sometimes has trouble encoding characters, causing it to crash before finishing the full download. I've found one that seems promising called rechat-dl. It downloads the comments as a JSON. I'm trying to learn how to parse it so that I could retrieve just the comments from the file. I'm using a JSON Viewer to learn the format. I have been working on chat downloads from a folder that doesn't get pushed, but I will begin to push updates on a script to downloads chats.
 
 I have finished a short script for downloading the JSON of comments and extracting a given comment from it. A copy of this called Download_Script has been added into a new folder called Pipeline. The Pipeline folder will show the basic steps of how file IDs are retrieved, fed into the comment downloader, and affixed to the full dataframe.
+
+# 10/28
+I haven't been able to find an elegant solution for how to get the VOD IDs. Instead, what I've started doing is opening all the links to the VODs, getting their ID from the URL and putting it in a text file. I can use this text file as the input for my VOD comment downloader.
