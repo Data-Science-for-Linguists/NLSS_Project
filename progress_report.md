@@ -40,3 +40,6 @@ I've come across what appears to be missing VODs which will have to be accounted
 
 # 10/30
 I have started running my script that downloads all of the video comments. I had to use 'subprocess' in order to for loop through the video IDs and run the script. I am going to start working on a second list of video IDs which picks up where the current one left off. The first video list ends at a spot in which a few VODs were not uploaded. It should be ok if I don't have comments for every row in the dataframe, but I want to make sure that the comments are attached to the proper row instead of attaching to the missing VOD rows.
+
+# 10/31
+I found that the first object in every JSON file is information about the stream. Using the recorded_at attribute, I can pull the date of each VOD out of the comments and use this to attach VODs to comments and maybe to put together the comments split over multiple videos.
