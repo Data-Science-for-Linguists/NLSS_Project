@@ -37,3 +37,6 @@ I realized that some VODs are split into two parts. This means the comments will
 
 # 10/29
 I've come across what appears to be missing VODs which will have to be accounted for when combining the comments with the dataframe. I'm having issues with the comment download script. When giving it a VOD ID it works fine, but when for-looping through a list of VOD IDs, it crashes.
+
+# 10/30
+I have started running my script that downloads all of the video comments. I had to use 'subprocess' in order to for loop through the video IDs and run the script. I am going to start working on a second list of video IDs which picks up where the current one left off. The first video list ends at a spot in which a few VODs were not uploaded. It should be ok if I don't have comments for every row in the dataframe, but I want to make sure that the comments are attached to the proper row instead of attaching to the missing VOD rows.
