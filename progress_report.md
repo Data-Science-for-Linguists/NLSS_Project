@@ -43,3 +43,5 @@ I have started running my script that downloads all of the video comments. I had
 
 # 10/31
 I found that the first object in every JSON file is information about the stream. Using the recorded_at attribute, I can pull the date of each VOD out of the comments and use this to attach VODs to comments and maybe to put together the comments split over multiple videos.
+
+I encountered my first three part video while grabbing the last few video IDs.
