@@ -45,3 +45,8 @@ I have started running my script that downloads all of the video comments. I had
 I found that the first object in every JSON file is information about the stream. Using the recorded_at attribute, I can pull the date of each VOD out of the comments and use this to attach VODs to comments and maybe to put together the comments split over multiple videos.
 
 I encountered my first three part video while grabbing the last few video IDs.
+
+# 11/1
+All comment JSONs have been downloaded, and are now being organized to put into the full data frame.
+
+I'm tring to figure out the best way to store the comments so that I can add them to the video data frame. I think a multi-index solution may be the best choice. My outer most index will be the date the video was recorded (which can help us put back together split VODs), the inner index could be the commenter, and then have a column for the comments.
