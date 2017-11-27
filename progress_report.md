@@ -53,3 +53,6 @@ I'm tring to figure out the best way to store the comments so that I can add the
 
 # 11/17
 It's been too long, let's get back into this. I have been working on the project exclusively on my desktop. However, all of the data that is used in my project is hosted on Github, so I have changed the NLSS_V2 and Comment_DataFrame files to read in the files in the Github hosted directories. This means I can easily switch back and forth between desktop and laptop.
+
+# 11/27
+I added a list of bad words from Google's What Do You Love project. I can use this in analysis.
