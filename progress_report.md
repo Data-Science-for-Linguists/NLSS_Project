@@ -50,3 +50,6 @@ I encountered my first three part video while grabbing the last few video IDs.
 All comment JSONs have been downloaded, and are now being organized to put into the full data frame.
 
 I'm tring to figure out the best way to store the comments so that I can add them to the video data frame. I think a multi-index solution may be the best choice. My outer most index will be the date the video was recorded (which can help us put back together split VODs), the inner index could be the commenter, and then have a column for the comments.
+
+# 11/17
+It's been too long, let's get back into this. I have been working on the project exclusively on my desktop. However, all of the data that is used in my project is hosted on Github, so I have changed the NLSS_V2 and Comment_DataFrame files to read in the files in the Github hosted directories. This means I can easily switch back and forth between desktop and laptop.
