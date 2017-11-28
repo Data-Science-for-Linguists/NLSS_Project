@@ -15,4 +15,4 @@ What are the most active users saying? I would like to look at the comments of u
 It also may be interesting to build a language model of Twitch Chat. 
 
 # Update
-My current goal is to further the scope of the sentiment analysis angle and start tying it in to the stream statistics. I may edit the Vader lexicon to include certain words which it currently does not handle.
+My current goal is to use Vader Sentiment Analysis to get the sentiment scores for all comments as either positive or negative (or unknown which will be ignored). The percentage of positive to negative comments in a show will be calculated from this and used as the labels for a machine learning task. Using features such as the games played, peak viewership, and hosts of the show, I will try to predict the percentage of positive and negative comments.
