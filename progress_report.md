@@ -55,4 +55,4 @@ I'm tring to figure out the best way to store the comments so that I can add the
 It's been too long, let's get back into this. I have been working on the project exclusively on my desktop. However, all of the data that is used in my project is hosted on Github, so I have changed the NLSS_V2 and Comment_DataFrame files to read in the files in the Github hosted directories. This means I can easily switch back and forth between desktop and laptop.
 
 # 11/27
-I added a list of bad words from Google's What Do You Love project. I can use this in analysis.
+I added a list of curse words from Google's What Do You Love project. I then looked at comments that contained these words, and at the rate of their use of the words hate and love. I looked at the average number of comments a user will post. I ran some sentiment analysis in a single user format. I will run this on a larger scale and look at how it compares to various stream stats.
