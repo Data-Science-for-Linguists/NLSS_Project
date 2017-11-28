@@ -1,4 +1,4 @@
-# Updated Project Plan
+# Old Project Plan
 
 A list of Video IDs has been compiled and fed to a comment downloading script.  I kept track of the videos which were split over multiple parts. The comment files generated from these videos will need to be put together. I have two files, one called VOD_ID and the other VOD_ID_Annotated. The difference is that the annotated file notes which videos need to be put together. I will attempt to put the comments together by comparing the video dates, as those that match are split streams.
 
