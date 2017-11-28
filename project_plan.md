@@ -13,3 +13,6 @@ I'm curious if certain games, or crew members change the positivity of the chat'
 What are the most active users saying? I would like to look at the comments of users who post the most across all videos. Is it positive, negative, neutral? How do their comments compare to less active users? What percentage of chat is produced by 'power users'? I could try to build a machine learning model the predicts whether a user is an active user. I could also do the same sort of analysis while considering whether the user is a subscriber or not. The JSON file includes whether a user subscribes to the channel.
 
 It also may be interesting to build a language model of Twitch Chat. 
+
+# Update
+My current goal is to further the scope of the sentiment analysis angle and start tying it in to the stream statistics. I may edit the Vader lexicon to include certain words which it currently does not handle.
