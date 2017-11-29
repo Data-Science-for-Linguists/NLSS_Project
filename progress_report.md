@@ -56,3 +56,6 @@ It's been too long, let's get back into this. I have been working on the project
 
 # 11/27
 I added a list of curse words from Google's What Do You Love project. I then looked at comments that contained these words, and at the rate of their use of the words hate and love. I looked at the average number of comments a user will post. I ran some sentiment analysis in a single user format. I will run this on a larger scale and look at how it compares to various stream stats.
+
+#11/28
+I've gotten a start on the machine learning portion of my project. I'm finishing getting my X and y values put together to begin the training. The sentiment of chat ranges from 40-60% positive on any given video, so the ML task should try to predict within this range.
