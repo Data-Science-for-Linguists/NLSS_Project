@@ -47,10 +47,10 @@ However VADER unsurprisingly does not handle sarcasm
 
 Each comment recieves four scores: compound, negative, neutral, and positive. The negative, neutral, and positive scores represent the percentage of words in the sentence which are labeled as such. The compound score is the sum of the scores with the feature rules applied and normalized between -1 and 1. For this analysis, the compound score was what was considered when determining the sentiment of a comment.
 
-## 5. Sentiment Breakdown
+## 5. Sentiment Analysis Issues
 
-
-![Sentiment Score Breakdown](images/CommentSentiment.png)
+Of the 5,000,000 comments analyzed by VADER, only 26% or 1,300,000 comments were able to be categorized as positive or negative.
+![Sentiment Score Breakdown](images/CommentSentiment.png) The rest of the 74% of comments had a compound score of 0. This is not because the majority of comments in the corpus are neutral, but instead is an issue with how a lexically based sentiment analyzer deals with unknown words. As previously stated, the compound score is an aggregate of individual word scores, which are human rated scores stored in a dictionary. When a word is being analyzed and is not found in the dictionary of known words, it receives a score of 0. The sentence's compound score can than be calculated from its non-zero scores. However, if a sentence contains only unknown words, than the entire sentence will receive a compound score of zero. Along with unusual misspellings of words and gibberish, comments which occur frequently such as Twitch emotes such as "!kappa" cause many comments to receive a zero score. It is also quite common for Twitch comments to be very short, often containing only one or two words. While VADER will try to use other words in a sentence to generate a compound score, if it only receives a handful of unknown words it will be unable to rate the sentence.
 
 ## 6. Score Prediction 
 
