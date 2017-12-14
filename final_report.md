@@ -8,7 +8,7 @@ The Northernlion Live Super Show is a long running video game live stream hosted
 
 ## 2. Data Collection 
 
-A corpus was compiled consisting of 5,000,000 comments from 200 episodes of the Northernlion Live Super Show. Corpus creation started with manually compiling a list of unique [video identifiers](Pipeline/VOD_ID_full.txt) found at the end of each video's URL. These video ids were fed into [rechat-dl](https://github.com/KunaiFire/rechat-dl) which downloads a JSON file of comments for each video. Information regarding the date of the comment, the username, and the content of the message were compiled into a dataframe of comments. Another dataframe was created from information about the [docket](http://twoandahalfscums.blogspot.co.uk/p/nlss.html) (games played on a stream, the users playing the games), and [viewership statistics](sullygnome.com/channel/Northernlion). These two dataframes were put together for a full dataframe which contained entries for each of the episodes with columns for the docket, stream statistics, and comments.
+A corpus was compiled consisting of 5,000,000 comments from 200 episodes of the Northernlion Live Super Show. Corpus creation started with manually compiling a list of unique [video identifiers](Pipeline/VOD_ID_full.txt) found at the end of each video's URL. These video ids were fed into [rechat-dl](https://github.com/KunaiFire/rechat-dl) which downloads a JSON file of comments for each video. Information regarding the date of the comment, the username, and the content of the message were compiled into a dataframe of comments. Another dataframe was created from information about the [docket](http://twoandahalfscums.blogspot.co.uk/p/nlss.html) (games played on a stream, the users playing the games), and [viewership statistics](https://sullygnome.com/channel/Northernlion). These two dataframes were put together for a full dataframe which contained entries for each of the episodes with columns for the docket, stream statistics, and comments.
 
 ## 3. Data Cleaning 
 
@@ -20,7 +20,33 @@ The docket and player information were turned into lists. Information about the 
 
 Sentiment Analysis was performed with [VADER](https://github.com/cjhutto/vaderSentiment). VADER was chosen as it is "specifically attuned to sentiments expressed in social media." VADER is a lexically based sentiment analyzer. A dictionary of words and their sentiment scores are created by having human raters from Amazon Mechanical Turk judge each word. When VADER analyzes a sentence, it first analyzes individual words (and emoticons) and assigns them a sentiment score between -4 (more negative) and 4 (more positive). The sentiment of a sentence is the sum of the scores of each word in the sentence normalized between -1 (more negative) and 1 (more positive).
 
-In addition to the base word scores, VADER's sentiment scores factor in features such as capitalization, punctuation, negation, and degree modifiers. These scores, like the lexical scores, are based on human ratings from MTurk.
+In addition to the base word scores, VADER's sentiment scores factor in features such as capitalization, punctuation, negation, and degree modifiers. These scores, like the lexical scores, are based on human ratings from MTurk. These features then modify the overall score of a sentence. 
 
+Example sentences which have been analyzed from comment data:
+
+*Emoticons*
+>":) :) :) :)"
+compound: 0.9001
+neg: 0.0 
+neu: 0.0 
+pos: 1.0
+
+*Capitalization*
+>"I DEMAND TOWERS"
+compound: -0.128 
+neg: 0.6
+neu: 0.4
+pos: 0.0
+
+However VADER unsurprisingly does not handle sarcasm
+>"it's really exciting watching them shoot the same demon frogs over and over again for an hour"
+compound: 0.2716 
+neg: 0.115
+neu: 0.718 
+pos: 0.167
+
+Each comment recieves four scores: compound, negative, neutral, and positive. The negative, neutral, and positive scores represent the percentage of words in the sentence which are labeled as such. The compound score is the sum of the scores with the feature rules applied and normalized between -1 and 1. For this analysis, the compound score was what was considered when determining the sentiment of a comment.
+
+![Sentiment Score Breakdown](images/CommentSentiment.png)
 ## 5. Score Prediction 
 
