@@ -16,7 +16,7 @@ Throughout each step of creating the corpus data had to be cut. The original lis
 
 The docket and player information were turned into lists. Information about the crew of players were standardized by converting various nicknames into a uniform name. Several show dates had been entered wrong in the docket list. These episodes were checked against records such as Tweets that mentioned the episode in order to fix the dates.
 
-## 4. Sentiment Analysis 
+## 4. VADER Sentiment Analysis 
 
 Sentiment Analysis was performed with [VADER](https://github.com/cjhutto/vaderSentiment). VADER was chosen as it is "specifically attuned to sentiments expressed in social media." VADER is a lexically based sentiment analyzer. A dictionary of words and their sentiment scores are created by having human raters from Amazon Mechanical Turk judge each word. When VADER analyzes a sentence, it first analyzes individual words (and emoticons) and assigns them a sentiment score between -4 (more negative) and 4 (more positive). The sentiment of a sentence is the sum of the scores of each word in the sentence normalized between -1 (more negative) and 1 (more positive).
 
@@ -26,27 +26,31 @@ Example sentences which have been analyzed from comment data:
 
 *Emoticons*
 >":) :) :) :)"
-compound: 0.9001
-neg: 0.0 
-neu: 0.0 
-pos: 1.0
+>compound: 0.9001
+>neg: 0.0 
+>neu: 0.0 
+>pos: 1.0
 
 *Capitalization*
 >"I DEMAND TOWERS"
 compound: -0.128 
-neg: 0.6
-neu: 0.4
-pos: 0.0
+>neg: 0.6
+>neu: 0.4
+>pos: 0.0
 
 However VADER unsurprisingly does not handle sarcasm
 >"it's really exciting watching them shoot the same demon frogs over and over again for an hour"
-compound: 0.2716 
-neg: 0.115
-neu: 0.718 
-pos: 0.167
+>compound: 0.2716 
+>neg: 0.115
+>neu: 0.718 
+>pos: 0.167
 
 Each comment recieves four scores: compound, negative, neutral, and positive. The negative, neutral, and positive scores represent the percentage of words in the sentence which are labeled as such. The compound score is the sum of the scores with the feature rules applied and normalized between -1 and 1. For this analysis, the compound score was what was considered when determining the sentiment of a comment.
 
+## 5. Sentiment Breakdown
+
+
 ![Sentiment Score Breakdown](images/CommentSentiment.png)
-## 5. Score Prediction 
+
+## 6. Score Prediction 
 
