@@ -63,4 +63,7 @@ A machine learning approach to sentiment analysis could possibly increase the nu
 
 The goal of the machine learning section is to be able to predict the percentage of positive and negative comments a given video will have based on the stream statistics, docket list, and player list.
 
+An overall sentiment score was determined for each episode by calculating the fraction of positive scores over the total number of comments in the episode. It was determined that videos ranged from 40% positive as a low and 60% positive as a high. 
+
 ![Sentiment Split](images/SentimentSplit.PNG)
+
