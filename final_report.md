@@ -8,7 +8,7 @@ The Northernlion Live Super Show is a long running video game live stream hosted
 
 ## 2. Data Colection 
 
-A corpus was compiled consisting of 5,000,000 comments from 200 episodes of the Northernlion Live Super Show. Corpus creation included compiling a list of unique [video identifiers](Pipeline/VOD_ID_full.txt)
+A corpus was compiled consisting of 5,000,000 comments from 200 episodes of the Northernlion Live Super Show. Corpus creation started with manually compiling a list of unique [video identifiers](Pipeline/VOD_ID_full.txt) found at the end of each video's URL. These video ids were fed into [rechat-dl](https://github.com/KunaiFire/rechat-dl) which downloads a JSON file of comments for each video. Information regarding the date of the comment, the username, and the content of the message were compiled into a [dataframe](NLSS_V3.ipynb#Comment-Dataframe)
 
 ## 3. Data Cleaning 
 
