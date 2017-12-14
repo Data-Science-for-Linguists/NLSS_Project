@@ -8,7 +8,7 @@ The Northernlion Live Super Show is a long running video game live stream hosted
 
 ## 2. Data Colection 
 
-A corpus was compiled consisting of 5,000,000 comments from 200 episodes of the Northernlion Live Super Show. Corpus creation included compiling a list of unique [video identifiers](Pipepline/VOD_ID_full.txt)
+A corpus was compiled consisting of 5,000,000 comments from 200 episodes of the Northernlion Live Super Show. Corpus creation included compiling a list of unique [video identifiers](Pipeline/VOD_ID_full.txt)
 
 ## 3. Data Cleaning 
 
