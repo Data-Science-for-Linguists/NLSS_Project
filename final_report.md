@@ -61,3 +61,6 @@ A machine learning approach to sentiment analysis could possibly increase the nu
 
 ## 6. Score Prediction 
 
+The goal of the machine learning section is to be able to predict the percentage of positive and negative comments a given video will have based on the stream statistics, docket list, and player list.
+
+![Sentiment Split](images/SentimentSplit.png)
