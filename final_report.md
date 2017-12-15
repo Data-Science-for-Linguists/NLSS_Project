@@ -67,3 +67,12 @@ An overall sentiment score was determined for each episode by calculating the fr
 
 ![Sentiment Split](images/SentimentSplit.PNG)
 
+The training features available include both categorical and numerical data. The categorical data includes information about the docket and crew and the numerical data includes information about the stream statistics.
+
+![AvgViewers](images/AvgViewers.png)
+![FollowersGained](images/FollowersGained.png)
+![FollowersPerHour](images/FollowersPerHour.png)
+![MaxViewers](images/MaxViewers.png)
+![ViewsGained](images/ViewsGained.png)
+![ViewsPerHour](images/ViewsPerHour.png)
+![LengthMinutes](images/LengthMinutes.png)
