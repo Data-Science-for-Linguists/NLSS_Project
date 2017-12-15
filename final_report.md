@@ -47,6 +47,8 @@ However VADER unsurprisingly does not handle sarcasm
 
 Each comment recieves four scores: compound, negative, neutral, and positive. The negative, neutral, and positive scores represent the percentage of words in the sentence which are labeled as such. The compound score is the sum of the scores with the feature rules applied and normalized between -1 and 1. For this analysis, the compound score was what was considered when determining the sentiment of a comment.
 
+For more information on the inner-workings of VADER, check out its [release paper](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf)
+
 ## 5. Sentiment Analysis Issues
 
 Of the 5,000,000 comments analyzed by VADER, only 26% or 1,300,000 comments were able to be categorized as positive or negative.
