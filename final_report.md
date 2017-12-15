@@ -14,7 +14,7 @@ A corpus was compiled consisting of 5,000,000 comments from 200 episodes of the 
 
 Throughout each step of creating the corpus data had to be cut. The original list of dockets contained entries for 588 shows, while the files containing stream statistics only contained information on 441 shows. Removing duplicate shows and unrelated streams left a list of 303 videos that could be looked at. However, after downloading JSON files of comments for each of the videos, it was discovered that Twitch did not retain chat record chat records before a certain date. Removing files that did not contain comments resulted in 200 videos that could be analyzed.
 
-The docket and player information were turned into lists. Information about the crew of players were standardized by converting various nicknames into a uniform name. Several show dates had been entered wrong in the docket list. These episodes were checked against records such as Tweets that mentioned the episode in order to fix the dates.
+The data that was left had to be [heavily cleaned](MarkdownNotebooks/NLSS_V2.md#cleaning-up-dataframe). The docket and player information were turned into lists. Information about the crew of players were standardized by converting various nicknames into a uniform name. Several show dates had been entered wrong in the docket list. These episodes were checked against records such as Tweets that mentioned the episode in order to fix the dates.
 
 ## 4. VADER Sentiment Analysis 
 
