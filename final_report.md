@@ -98,3 +98,5 @@ Views per hour gained in show
 Length of show in minutes
 
 ![LengthMinutes](images/LengthMinutes.png)
+ 
+A [linear regression model](MarkdownNotebooks/NLSS_V3/NLSS_V3.md#Predicting-video-sentiment-with-numerical-data) was built using the numerical features listed above.
