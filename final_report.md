@@ -69,10 +69,19 @@ An overall sentiment score was determined for each episode by calculating the fr
 
 The training features available include both categorical and numerical data. The categorical data includes information about the docket and crew and the numerical data includes information about the stream statistics.
 
+Below are scatter plots of the relation between individual stream statistics (X-axis) and overall comment sentiment(Y-axis)
+
+Average viewers in show
 ![AvgViewers](images/AvgViewers.png)
+Followers gained in show
 ![FollowersGained](images/FollowersGained.png)
+Followers per hour gained in show
 ![FollowersPerHour](images/FollowersPerHour.png)
+Max viewers in show
 ![MaxViewers](images/MaxViewers.png)
+Total views gained per show
 ![ViewsGained](images/ViewsGained.png)
+Views per hour gained in show
 ![ViewsPerHour](images/ViewsPerHour.png)
+Length of show in minutes
 ![LengthMinutes](images/LengthMinutes.png)
