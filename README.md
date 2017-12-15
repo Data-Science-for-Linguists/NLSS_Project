@@ -11,6 +11,6 @@
 
 # Project Directory #
 * [Project Presentation](NLSS_Presentation.pdf)
-* Filler
+* [Final Report](final_report.md)
 * Filler
 * Filler
