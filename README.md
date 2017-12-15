@@ -11,6 +11,9 @@
 
 # Project Directory #
 * [Project Presentation](NLSS_Presentation.pdf)
+> A in-class presentation that provides an overview to the project.
 * [Final Report](final_report.md)
+> The findings from this project.
 * [Public Data](/PublicData)
+> One of the goals of this project is sharability of the data used. This folder contains data required to reproduce results including JSON files of comments, stream statistics, and a list of dockets.
 * Filler
