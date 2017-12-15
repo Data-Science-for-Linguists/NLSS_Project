@@ -16,4 +16,19 @@
 > The findings from this project.
 * [Public Data](/PublicData)
 > One of the goals of this project is sharability of the data used. This folder contains data required to reproduce results including JSON files of comments, stream statistics, and a list of dockets.
-* Filler
+* [Project Plan](project_plan.md)
+> My goals for this project.
+* [Progress Report](progress_report.md)
+> Updates and roadblocks encountered in this project.
+* [License](LICENSE.md)
+> An MIT license
+* [Lincense Notes](LICENSE_notes.md)
+> My reasonings for choosing an MIT license.
+* [Pipeline](/Pipeline)
+> A folder containing files used to download the comments used in this project.
+* [Old files](/OldFiles)
+> A folder containing older deprecated versions of Jupyter notebooks used in this analysis.
+* [Markdown Notebook](/MarkdownNotebooks)
+> A folder containing the Jupyter notebooks used in this analysis, converted to markdown format.
+* [Images](/images)
+> A folder containing the images linked to in this project.
