@@ -59,3 +59,6 @@ I added a list of curse words from Google's What Do You Love project. I then loo
 
 # 11/28
 I've gotten a start on the machine learning portion of my project. I'm finishing getting my X and y values put together to begin the training. The sentiment of chat ranges from 40-60% positive on any given video, so the ML task should try to predict within this range.
+
+# 12/15
+Despite being able to dumify my categorical data, I'm having trouble training a model which is able to take both numerical and categorical data and return a prediction for the percentage of positive comments.

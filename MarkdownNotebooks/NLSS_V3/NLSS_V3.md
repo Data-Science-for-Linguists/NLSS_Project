@@ -866,67 +866,67 @@ comment_df['User'].value_counts()
 
 
 
-    Nightbot              99774
-    Dr_Roc                29053
-    Moobot                27103
-    ShoresofSerenity      25651
-    luigimasta777         20301
-    TheDon_Corleone       18941
-    SpyroTheSheep         18666
-    id319                 17571
-    Eluc                  16235
-    machshop              15431
-    TheobromaCacao        15334
-    coosloos              15334
-    GodlyBurrito          15259
-    ArrestedHouse         14928
-    Ptrevordactyl         14169
-    wolfguy84             14109
-    juleskum17            13936
-    Noremac__             13601
-    charsept              13522
-    KaiserRolled          12768
-    Anakhronos            12751
-    zesty69pepper         12147
-    graysobstory          12044
-    Tr11ck                11779
-    volpescura            11752
-    Geavil                11325
-    emperorvespasian      11317
-    TheAzzaTom            11282
-    EggianoScumaldoo      11233
-    ops1197               10651
-                          ...  
-    Darymorata                1
-    agnellorimbalzello        1
-    Carnover                  1
-    SpicyMexicanTaco          1
-    ICETREY27                 1
-    Contaxd                   1
-    Poiuy2010_2011            1
-    picklepum                 1
-    KitScene                  1
-    Muji25                    1
-    Brenot20                  1
-    BobTheBuilder7347         1
-    Frenchornsolo             1
-    draknaw1                  1
-    litfotwenty               1
-    Wooglepook                1
-    xavrian                   1
-    keving1390                1
-    tzaduc                    1
-    zsmalls2000               1
-    TacosTim                  1
-    Pressbtofail              1
-    Gomazu                    1
-    i_hate_doritos            1
-    Superzk3                  1
-    raggedy_man               1
-    Poopathan                 1
-    alterEGG0                 1
-    CFarrow                   1
-    Evilvac                   1
+    Nightbot             99774
+    Dr_Roc               29053
+    Moobot               27103
+    ShoresofSerenity     25651
+    luigimasta777        20301
+    TheDon_Corleone      18941
+    SpyroTheSheep        18666
+    id319                17571
+    Eluc                 16235
+    machshop             15431
+    coosloos             15334
+    TheobromaCacao       15334
+    GodlyBurrito         15259
+    ArrestedHouse        14928
+    Ptrevordactyl        14169
+    wolfguy84            14109
+    juleskum17           13936
+    Noremac__            13601
+    charsept             13522
+    KaiserRolled         12768
+    Anakhronos           12751
+    zesty69pepper        12147
+    graysobstory         12044
+    Tr11ck               11779
+    volpescura           11752
+    Geavil               11325
+    emperorvespasian     11317
+    TheAzzaTom           11282
+    EggianoScumaldoo     11233
+    ops1197              10651
+                         ...  
+    Xxgriffyxx               1
+    Kailash_7                1
+    TheVally                 1
+    Kilz2000                 1
+    eroticgirrafe708         1
+    Yeeshhh                  1
+    xphoebee_xx              1
+    bubbabrewski             1
+    Mcwollust                1
+    Andrejmon                1
+    Pirate__Cat              1
+    kroica                   1
+    DEMOCRACY_BOT4000        1
+    lesterice                1
+    Ricard1994               1
+    Diglett64                1
+    Developmount             1
+    Dai_tou_zai              1
+    yacko_hs                 1
+    Traintogain              1
+    hubba368                 1
+    NoahS116                 1
+    Leandroxz20              1
+    Angrybenko               1
+    CaptainBeardyman         1
+    zlatkodboss123           1
+    OdwinGreen               1
+    PsychoWraith             1
+    Sparveiro                1
+    babbaca                  1
     Name: User, Length: 58835, dtype: int64
 
 
@@ -1422,6 +1422,8 @@ comment_df.loc[comment_df['User']=='Dr_Roc']
 
 
 
+# VADER Sentiment Analysis
+
 
 ```python
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
@@ -1663,27 +1665,27 @@ plt.show()
 
 
 
-    ([<matplotlib.patches.Wedge at 0x133934675f8>,
-      <matplotlib.patches.Wedge at 0x133934737f0>,
-      <matplotlib.patches.Wedge at 0x1339347a9e8>],
-     [<matplotlib.text.Text at 0x13393467da0>,
-      <matplotlib.text.Text at 0x13393473f98>,
-      <matplotlib.text.Text at 0x13396bc41d0>],
-     [<matplotlib.text.Text at 0x133934732b0>,
-      <matplotlib.text.Text at 0x1339347a4a8>,
-      <matplotlib.text.Text at 0x13396bc46a0>])
+    ([<matplotlib.patches.Wedge at 0x14813447c50>,
+      <matplotlib.patches.Wedge at 0x14813454e48>,
+      <matplotlib.patches.Wedge at 0x14813465080>],
+     [<matplotlib.text.Text at 0x14813454438>,
+      <matplotlib.text.Text at 0x1481345e630>,
+      <matplotlib.text.Text at 0x14813465828>],
+     [<matplotlib.text.Text at 0x14813454908>,
+      <matplotlib.text.Text at 0x1481345eb00>,
+      <matplotlib.text.Text at 0x14813465cf8>])
 
 
 
 
 
 
-    <matplotlib.text.Text at 0x133934aff60>
+    <matplotlib.text.Text at 0x148134d9d68>
 
 
 
 
-![png](output_29_2.png)
+![png](output_30_2.png)
 
 
 If we ignore the unkown comments, we have a really nice split between positive and negative comments
@@ -2310,7 +2312,7 @@ plt.show()
 
 
 
-    <matplotlib.collections.PathCollection at 0x133b38c6c88>
+    <matplotlib.collections.PathCollection at 0x14816efc390>
 
 
 
@@ -2318,13 +2320,13 @@ plt.show()
     
 
 
-![png](output_40_2.png)
+![png](output_41_2.png)
 
 
 
 
 
-    <matplotlib.collections.PathCollection at 0x133b3947e10>
+    <matplotlib.collections.PathCollection at 0x14816fa4e10>
 
 
 
@@ -2332,13 +2334,13 @@ plt.show()
     
 
 
-![png](output_40_5.png)
+![png](output_41_5.png)
 
 
 
 
 
-    <matplotlib.collections.PathCollection at 0x133b3d72ac8>
+    <matplotlib.collections.PathCollection at 0x1481703f780>
 
 
 
@@ -2346,13 +2348,13 @@ plt.show()
     
 
 
-![png](output_40_8.png)
+![png](output_41_8.png)
 
 
 
 
 
-    <matplotlib.collections.PathCollection at 0x133b3e02da0>
+    <matplotlib.collections.PathCollection at 0x148170caa90>
 
 
 
@@ -2360,13 +2362,13 @@ plt.show()
     
 
 
-![png](output_40_11.png)
+![png](output_41_11.png)
 
 
 
 
 
-    <matplotlib.collections.PathCollection at 0x133b3e98f28>
+    <matplotlib.collections.PathCollection at 0x1481715bc50>
 
 
 
@@ -2374,13 +2376,13 @@ plt.show()
     
 
 
-![png](output_40_14.png)
+![png](output_41_14.png)
 
 
 
 
 
-    <matplotlib.collections.PathCollection at 0x133b3f28a90>
+    <matplotlib.collections.PathCollection at 0x148171e77f0>
 
 
 
@@ -2388,13 +2390,13 @@ plt.show()
     
 
 
-![png](output_40_17.png)
+![png](output_41_17.png)
 
 
 
 
 
-    <matplotlib.collections.PathCollection at 0x133b3fc1438>
+    <matplotlib.collections.PathCollection at 0x1481727f1d0>
 
 
 
@@ -2402,7 +2404,7 @@ plt.show()
     
 
 
-![png](output_40_20.png)
+![png](output_41_20.png)
 
 
 # Linear regression with stream statistics
@@ -3133,6 +3135,8 @@ docket_df.head()
 
 Unsure why twos occur in dummy data
 
+# Trouble training with categorical data
+
 
 ```python
 X=crew_df
@@ -3148,7 +3152,7 @@ logistic.fit(X,y)
 
     ValueError                                Traceback (most recent call last)
 
-    <ipython-input-265-be19a21cfab0> in <module>()
+    <ipython-input-37-be19a21cfab0> in <module>()
           4 from sklearn.linear_model import LogisticRegression
           5 logistic = LogisticRegression()
     ----> 6 logistic.fit(X,y)
@@ -3171,4 +3175,82 @@ logistic.fit(X,y)
     
 
     ValueError: Unknown label type: 'continuous'
+
+
+
+```python
+from sklearn.linear_model import LinearRegression
+len(X)
+len(y)
+model = LinearRegression()
+model.fit(X, y)
+
+y_pred = model.predict(X)
+plt.scatter(X, y, color = 'red')
+plt.plot(X, model.predict(X), color = 'blue')
+plt.title('Crew Members and Comment Sentiment')
+plt.xlabel('Crew Members')
+plt.ylabel('Comment Sentiment')
+plt.show()
+```
+
+
+
+
+    130
+
+
+
+
+
+
+    130
+
+
+
+
+
+
+    LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)
+
+
+
+
+    ---------------------------------------------------------------------------
+
+    ValueError                                Traceback (most recent call last)
+
+    <ipython-input-38-e85f51fe0115> in <module>()
+          6 
+          7 y_pred = model.predict(X)
+    ----> 8 plt.scatter(X, y, color = 'red')
+          9 plt.plot(X, model.predict(X), color = 'blue')
+         10 plt.title('Crew Members and Comment Sentiment')
+    
+
+    ~\Anaconda3\lib\site-packages\matplotlib\pyplot.py in scatter(x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, verts, edgecolors, hold, data, **kwargs)
+       3432                          vmin=vmin, vmax=vmax, alpha=alpha,
+       3433                          linewidths=linewidths, verts=verts,
+    -> 3434                          edgecolors=edgecolors, data=data, **kwargs)
+       3435     finally:
+       3436         ax._hold = washold
+    
+
+    ~\Anaconda3\lib\site-packages\matplotlib\__init__.py in inner(ax, *args, **kwargs)
+       1896                     warnings.warn(msg % (label_namer, func.__name__),
+       1897                                   RuntimeWarning, stacklevel=2)
+    -> 1898             return func(ax, *args, **kwargs)
+       1899         pre_doc = inner.__doc__
+       1900         if pre_doc is None:
+    
+
+    ~\Anaconda3\lib\site-packages\matplotlib\axes\_axes.py in scatter(self, x, y, s, c, marker, cmap, norm, vmin, vmax, alpha, linewidths, verts, edgecolors, **kwargs)
+       3962         y = np.ma.ravel(y)
+       3963         if x.size != y.size:
+    -> 3964             raise ValueError("x and y must be the same size")
+       3965 
+       3966         if s is None:
+    
+
+    ValueError: x and y must be the same size
 

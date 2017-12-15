@@ -22,7 +22,7 @@ Sentiment Analysis was performed with [VADER](https://github.com/cjhutto/vaderSe
 
 In addition to the base word scores, VADER's sentiment scores factor in features such as capitalization, punctuation, negation, and degree modifiers. These scores, like the lexical scores, are based on human ratings from MTurk. These features then modify the overall score of a sentence. 
 
-Example sentences which have been analyzed from comment data:
+[Example sentences](MarkdownNotebooks/NLSS_V3/NLSS_V3.md#VADER-Sentiment-Analysis) which have been analyzed from comment data:
 
 *Emoticons*
 >":) :) :) :)"
@@ -100,3 +100,7 @@ Length of show in minutes
 ![LengthMinutes](images/LengthMinutes.png)
  
 A [linear regression model](MarkdownNotebooks/NLSS_V3/NLSS_V3.md#predicting-video-sentiment-with-numerical-data) was built using the numerical features listed above.
+
+# Further Work
+
+While a model could be built using the stream statistics, issues arose with training a model that could take both the categorical and statistical data. I would like to continue working on a model that is able to incorporate both types of features in its prediction.
