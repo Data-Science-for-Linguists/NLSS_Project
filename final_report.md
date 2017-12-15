@@ -73,15 +73,21 @@ Below are scatter plots of the relation between individual stream statistics (X-
 
 Average viewers in show
 ![AvgViewers](images/AvgViewers.png)
+
 Followers gained in show
 ![FollowersGained](images/FollowersGained.png)
+
 Followers per hour gained in show
 ![FollowersPerHour](images/FollowersPerHour.png)
+
 Max viewers in show
 ![MaxViewers](images/MaxViewers.png)
+
 Total views gained per show
 ![ViewsGained](images/ViewsGained.png)
+
 Views per hour gained in show
 ![ViewsPerHour](images/ViewsPerHour.png)
+
 Length of show in minutes
 ![LengthMinutes](images/LengthMinutes.png)
